@@ -1,0 +1,336 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  src: url('../../assets/Font_Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  src: url('../../assets/Font_Inter/Inter-Italic-VariableFont_opsz\,wght.ttf');
+}
+@import '../global/savedValues';
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Inter;
+}
+body {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+header {
+  @extend %flexbox1;
+  background-color: $dark-color-1;
+  height: 73px;
+  width: 100%;
+  padding: (0 $spacing-S);
+  a img {
+    width: 50px;
+    height: 50px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    gap: $spacing-ML;
+    ul {
+      @extend %flexbox1;
+      gap: $spacing-M;
+      a {
+        font-size: $font-size-s;
+        color: $lightest-color;
+        text-decoration: none;
+        &:hover {
+          color: $highlight-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  nav img {
+    width: 30px;
+    height: 30px;
+  }
+  ul li:last-of-type img {
+    filter: invert(100%) brightness(200%);
+  }
+}
+
+#hero {
+  background-color: $light-color-2;
+  img {
+    width: 100%;
+    aspect-ratio: 360/49;
+    object-fit: cover;
+    object-position: 50% 60%;
+  }
+}
+
+#shop > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  height: 39px;
+  background-color: $light-color-2;
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 100%;
+    position: relative;
+    width: 77px;
+    height: 77px;
+    cursor: pointer;
+    background-color: $light-color-2;
+    z-index: 1;
+  }
+  img {
+    width: 45px;
+  }
+}
+
+#shopfilters {
+  display: flex;
+  opacity: 0;
+  position: relative;
+  align-items: flex-start;
+  bottom: $spacing-ML;
+  justify-content: center;
+  gap: $spacing-XS;
+  background-color: $light-color-2;
+  padding: $spacing-M;
+  padding-bottom: $spacing-S;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      @extend %buttonstyle;
+      font-size: $font-size-xs;
+      font-weight: 400;
+      padding: $spacing-XS 0;
+      background-color: $light-color-3;
+      color: $lightest-color;
+    }
+    h6 {
+      width: 177px;
+      text-align: center;
+      align-self: center;
+      color: $darkest-color;
+      background-color: $light-color-1;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      font-size: $font-size-xs;
+      font-weight: 400;
+      padding: $spacing-XS 0;
+    }
+
+    button {
+      @extend %buttonstyle;
+      width: 90px;
+    }
+    p {
+      font-size: $font-size-xs;
+      padding: $spacing-XS 0;
+    }
+  }
+  #brands {
+    @extend %filterstyle;
+    padding-bottom: $spacing-S;
+    div {
+      gap: $spacing-XS;
+    }
+
+    input {
+      position: absolute;
+      right: $spacing-XS;
+    }
+    label {
+      padding-left: $spacing-XS;
+    }
+    #uniqueID0 {
+      top: 40px;
+    }
+    #uniqueID1 {
+      top: 63px;
+    }
+    #uniqueID2 {
+      top: 86px;
+    }
+    #allBrands {
+      top: 109px;
+    }
+  }
+  #prices {
+    @extend %filterstyle;
+
+    * {
+      padding-left: $spacing-XS;
+      padding-right: $spacing-XS;
+    }
+    div {
+      padding-bottom: $spacing-XS;
+    }
+    > p:last-of-type {
+      font-size: $font-size-xxs;
+      padding: $spacing-XXS;
+      background-color: $light-color-2;
+      border-radius: $border-radius;
+      color: $error-color;
+      align-self: center;
+      width: 160px;
+      text-align: center;
+      position: relative;
+      bottom: 10px;
+    }
+  }
+  input {
+    accent-color: $highlight-color;
+  }
+}
+#sneakers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $spacing-M;
+  margin: $spacing-M;
+
+  padding-bottom: $spacing-M;
+
+  background-color: $lightest-color;
+
+  .sneaker {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-XS;
+
+    width: 320px;
+    height: 487px;
+    box-shadow: $box-shadow;
+    background-color: $lightest-color;
+
+    border-radius: $border-radius;
+
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 320px;
+      height: 320px;
+      object-fit: contain;
+      background-color: $light-color-2;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      padding: $spacing-S;
+      gap: $spacing-XS;
+      color: $darkest-color;
+      margin-bottom: $spacing-XS;
+
+      li:first-of-type {
+        font-size: $font-size-s;
+      }
+      li:nth-of-type(2) {
+        font-size: $font-size-m;
+      }
+      li:nth-of-type(3) {
+        font-size: $font-size-m;
+        align-self: flex-end;
+        position: absolute;
+        bottom: $spacing-S;
+        right: $spacing-M;
+      }
+    }
+    button {
+      @extend %buttonstyle;
+
+      font-size: $font-size-l;
+      width: 292px;
+      height: 46px;
+    }
+  }
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  padding: $spacing-M;
+  padding-top: $spacing-L;
+  padding-bottom: $spacing-L;
+  gap: $spacing-L;
+  background-color: $darkest-color;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-XS;
+    h6 {
+      font-weight: 700;
+    }
+    h6,
+    ul {
+      font-size: 20px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-XS;
+    }
+    a {
+      color: $lightest-color;
+      text-decoration: none;
+      &:hover {
+        color: $highlight-color;
+      }
+    }
+  }
+}
+
+.invisible {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height 1s ease;
+}
+
+.visible {
+  max-height: 500px;
+  overflow: hidden;
+
+  transition: max-height 1s ease;
+}
+
+header nav > div {
+  > button {
+    border: none;
+    background-color: $dark-color-1;
+    display: none;
+  }
+  > div {
+    display: none;
+  }
+}
+
+#shop > div:last-of-type > {
+  p {
+    color: $error-color;
+    font-size: $font-size-s;
+    text-align: center;
+    padding-bottom: $spacing-M;
+  }
+}
+
+@import './mediaqueries.scss';

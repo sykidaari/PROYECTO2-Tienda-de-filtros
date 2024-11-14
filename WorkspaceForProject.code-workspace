@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../example-vite"
+    },
+    {
+      "path": "../PROYECTO 1. LANDING PAGE"
+    },
+    {
+      "path": "../../SCSS/SCSS"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "PROYECTO 2. TIENDA DE FILTROS"
+  }
+}

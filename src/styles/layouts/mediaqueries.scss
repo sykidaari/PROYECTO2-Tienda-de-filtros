@@ -1,0 +1,110 @@
+@media (max-width: 800px) {
+  .invisible1 {
+    max-height: 0px;
+    overflow: hidden;
+
+    transition: max-height 1s ease;
+  }
+
+  .visible1 {
+    max-height: 500px;
+    overflow: hidden;
+
+    transition: max-height 1s ease;
+  }
+
+  header > nav {
+    flex-direction: row-reverse;
+    position: relative;
+    > div {
+      > button {
+        display: block;
+      }
+      > div {
+        display: block;
+        position: absolute;
+        width: 130px;
+        height: 215px;
+        background-color: $light-color-3;
+        z-index: 2;
+        top: 43px;
+        border-radius: $border-radius;
+        opacity: 0;
+
+        border: $border-color 1px solid;
+      }
+    }
+
+    ul:first-of-type {
+      position: absolute;
+      flex-direction: column;
+
+      left: 0;
+
+      top: 63px;
+      z-index: 3;
+      gap: $spacing-S;
+      li {
+        width: 130px;
+        background-color: $dark-color-1;
+        padding: $spacing-XS;
+
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+    section {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  #shopfilters {
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-S;
+  }
+  .mobile-display {
+    top: 417px;
+  }
+}
+
+@media (max-width: 375px) {
+  #sneakers .sneaker,
+  #sneakers .sneaker img {
+    width: 220px;
+    height: auto;
+  }
+  #sneakers .sneaker button {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  header nav {
+    position: static;
+    ul:first-of-type {
+      position: absolute;
+      left: 0;
+      top: 142px;
+    }
+    div {
+      position: absolute;
+      left: 0;
+      top: 72px;
+      border: 10px solid $dark-color-1;
+      z-index: 2;
+
+      > div {
+        left: -10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
