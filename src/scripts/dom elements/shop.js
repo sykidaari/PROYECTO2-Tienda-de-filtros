@@ -14,7 +14,7 @@ const filterToggleImg = filterToggleButton.appendChild(
   document.createElement('img')
 );
 
-filterToggleImg.src = '/src/assets/assetIMGs/filterarrow.png';
+filterToggleImg.src = 'IMGs/filterarrow.png';
 filterToggleImg.alt = 'Toggle filters-bar';
 
 const shopFilters = shop.appendChild(document.createElement('div'));

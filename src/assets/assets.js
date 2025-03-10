@@ -13,97 +13,97 @@ const heroIMGsrc = 'IMGs/hero.jpeg';
 
 const sneakers = [
   {
-    imgSrc: 'IMGS/sneakers/airmax1.png',
+    imgSrc: 'IMGs/sneakers/airmax1.png',
     brand: 'Nike Original',
     model: 'Air Max 1',
     price: 120
   },
   {
-    imgSrc: 'IMGS/sneakers/nb9060.png',
+    imgSrc: 'IMGs/sneakers/nb9060.png',
     brand: 'New Balance',
     model: 'NB 9060',
     price: 80
   },
   {
-    imgSrc: 'IMGS/sneakers/nikerevolution.png',
+    imgSrc: 'IMGs/sneakers/nikerevolution.png',
     brand: 'Nike Original',
     model: 'Nike Revolution',
     price: 90
   },
   {
-    imgSrc: 'IMGS/sneakers/forumbuckle.png',
+    imgSrc: 'IMGs/sneakers/forumbuckle.png',
     brand: 'Adidas Original',
     model: 'Forum Buckle',
     price: 100
   },
   {
-    imgSrc: 'IMGS/sneakers/campus.png',
+    imgSrc: 'IMGs/sneakers/campus.png',
     brand: 'Adidas Original',
     model: 'Campus',
     price: 120
   },
   {
-    imgSrc: 'IMGS/sneakers/nb327.png',
+    imgSrc: 'IMGs/sneakers/nb327.png',
     brand: 'New Balance',
     model: 'NB 327',
     price: 120
   },
   {
-    imgSrc: 'IMGS/sneakers/dunklow.png',
+    imgSrc: 'IMGs/sneakers/dunklow.png',
     brand: 'Nike Original',
     model: 'Dunk Low',
     price: 120
   },
   {
-    imgSrc: 'IMGS/sneakers/gazelle.png',
+    imgSrc: 'IMGs/sneakers/gazelle.png',
     brand: 'Adidas Original',
     model: 'Gazelle',
     price: 90
   },
   {
-    imgSrc: 'IMGS/sneakers/airmaxsc.png',
+    imgSrc: 'IMGs/sneakers/airmaxsc.png',
     brand: 'Nike Original',
     model: 'Air Max SC',
     price: 150
   },
   {
-    imgSrc: 'IMGS/sneakers/handballspezial.png',
+    imgSrc: 'IMGs/sneakers/handballspezial.png',
     brand: 'Adidas Original',
     model: 'Handball Spezial',
     price: 120
   },
   {
-    imgSrc: 'IMGS/sneakers/airforce.png',
+    imgSrc: 'IMGs/sneakers/airforce.png',
     brand: 'Nike Original',
     model: 'Air Force',
     price: 130
   },
   {
-    imgSrc: 'IMGS/sneakers/nb90602.png',
+    imgSrc: 'IMGs/sneakers/nb90602.png',
     brand: 'New Balance',
     model: 'NB 9060',
     price: 100
   },
   {
-    imgSrc: 'IMGS/sneakers/nb480.png',
+    imgSrc: 'IMGs/sneakers/nb480.png',
     brand: 'New Balance',
     model: 'NB 480',
     price: 150
   },
   {
-    imgSrc: 'IMGS/sneakers/fullforcelow.png',
+    imgSrc: 'IMGs/sneakers/fullforcelow.png',
     brand: 'Nike Original',
     model: 'Full Force Low',
     price: 70
   },
   {
-    imgSrc: 'IMGS/sneakers/airmaxsc2.png',
+    imgSrc: 'IMGs/sneakers/airmaxsc2.png',
     brand: 'Nike Original',
     model: 'Air Max SC',
     price: 160
   },
   {
-    imgSrc: 'IMGS/sneakers/handballspezial2.png',
+    imgSrc: 'IMGs/sneakers/handballspezial2.png',
     brand: 'Adidas Original',
     model: 'Handball Spezial',
     price: 140
